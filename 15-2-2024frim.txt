@@ -2,19 +2,20 @@
 			MCA rathinam technical campus
 				
 	
-
-
-
-
-				SUMMARY OF CODE BELOW
+									SUMMARY OF CODE BELOW
 
 Macro Definitions:
 
 PERIPH_BASE: Base address of the peripheral registers.
+
 AHB1PERIPH_OFFSET: Offset for AHB1 peripherals.
+
 AHB1PERIPH_BASE: Base address for AHB1 peripherals.
+
 GPIOA_OFFSET: Offset for GPIOA.
+
 GPIOA_BASE: Base address for GPIOA.
+
 RCC_OFFSET: Offset for RCC (Reset and Clock Control).
 RCC_BASE: Base address for RCC.
 AHB1EN_R_OFFSET: Offset for AHB1 enable register in RCC.
@@ -26,6 +27,7 @@ GPIOA_OD_R: Register to control the output drive of GPIOA pins.
 GPIOAEN: Bit mask to enable clock access to GPIOA.
 PIN5: Bit mask for Pin 5 of GPIOA.
 LED_PIN: Alias for PIN5.
+
 Main Function:
 
 RCC_AHB1EN_R |= GPIOAEN;: Enable clock access to GPIOA.
@@ -39,35 +41,7 @@ Infinite Loop:
 
 The main loop toggles the state of Pin 5 using GPIOA_OD_R ^= LED_PIN;.
 There is a delay loop (for(int i=0;i<100000;i++){};) to control the blinking speed.
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
 
 				CODE
 
